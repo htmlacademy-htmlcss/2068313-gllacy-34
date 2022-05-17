@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Наумов Никита](https://up.htmlacademy.ru/htmlcss/34/user/2068313).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Елькин](https://htmlacademy.ru/profile/alex_elkin).
 
 ---
 

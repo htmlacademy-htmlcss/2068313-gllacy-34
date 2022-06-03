@@ -71,14 +71,18 @@
                     </li>
                     <li class="catalog-filter__item">
                         <label for="price">Цена: 100 ₽ – 500 ₽</label>
-                        <input id="price" type="range" min="0" max="100" step="1" />
+                        <div class="product-checkbox">
+                            <input id="price" type="range" min="0" max="100" step="1" />
+                        </div>
                     </li>
+
 
                     <li class="catalog-filter__item">
                         <label for="richness" class="control">Жирность:</label>
-                        <input id="richness" class="control__input" type="radio" name="product-group" value="richness" />0%
+                        <div class="product-checkbox">
+                            <input id="richness" class="control__input" type="radio" name="product-group" value="richness" />0%
 
-                        <label class="control">
+                            <label class="control">
                   <input
                     class="control-input"
                     type="checkbox"
@@ -86,7 +90,7 @@
                     value="richness"
                   />до 10%
                 </label>
-                        <label class="control">
+                            <label class="control">
                   <input
                     class="control-input"
                     type="checkbox"
@@ -94,7 +98,7 @@
                     value="richness"
                   />до 30%
                 </label>
-                        <label class="control">
+                            <label class="control">
                   <input
                     class="control-input"
                     type="checkbox"
@@ -103,16 +107,12 @@
                   />выше 30%
                 </label>
                     </li>
+                    </div>
                     <li class="catalog-filter__item">
-                        <label class="control">Наполнители:
-                  <input
-                    class="control__input"
-                    type="checkbox"
-                    name="product-group"
-                    value="chocolate"
-                  />шоколадные
-                </label>
-                        <label class="control">
+                        <div class="product-checkbox"><label class="control">Наполнители:
+                            <input class="control__input" type="checkbox" name="product-group" value="chocolate" />шоколадные
+                            </label>
+                            <label class="control">
                   <input
                     class="control__input"
                     type="checkbox"
@@ -120,7 +120,7 @@
                     value="shugar"
                   />сахарные посыпки
                 </label>
-                        <label class="control">
+                            <label class="control">
                   <input
                     class="control__input"
                     type="checkbox"
@@ -128,7 +128,7 @@
                     value="fruit"
                   />фрукты
                 </label>
-                        <label class="control">
+                            <label class="control">
                   <input
                     class="control__input"
                     type="checkbox"
@@ -136,7 +136,7 @@
                     value="pop"
                   />сиропы
                 </label>
-                        <label class="control">
+                            <label class="control">
                   <input
                     class="control__input"
                     type="checkbox"
@@ -146,8 +146,9 @@
                 </label>
                     </li>
                 </ul>
+                </div>
 
-                <button class="button" type="submit">Применить</button>
+                <button class="button-form" type="submit">Применить</button>
             </fieldset>
         </form>
     </section>
@@ -155,7 +156,7 @@
     <section class="cards">
         <h2 class="visualy-hidden">карточки товаров</h2>
         <div class="card">
-            <img src="images/raspberry.jpg" alt="малина" class="card__image" width="168" height="168" />
+            <img src="images/raspberry.png" alt="малина" class="card__image" width="168" height="168" />
             <h3 class="card__title">Малинка</h3>
             <p class="card__desc">Сливочное мороженое с малиновым джемом</p>
             <div class="for-users">
@@ -164,15 +165,15 @@
         </div>
 
         <div class="card">
-            <img src="images/pastache.png" alt="Фисташка" class="cards__image" width="168" height="168" />
+            <img src="images/pastache.png" alt="Фисташка" class="card__image" width="168" height="168" />
             <h3 class="card__title">Фисташка</h3>
-            <p class="card__desc">Фисташковый пломбир с кусочками шоколада</p>
+            <p class="card__desc">Фисташковый пломбир<br> с кусочками шоколада</p>
             <div class="for-users">
                 <p class="price">310 ₽/кг</p>
             </div>
         </div>
         <div class="card">
-            <img src="images/blueberry.jpg" alt="Черника" class="card__image" width="168" height="168" />
+            <img src="images/blueberry.png" alt="Черника" class="card__image" width="168" height="168" />
             <h3 class="card__title">Черника</h3>
             <p class="card__desc">Крем-брюле с черничным джемом</p>
             <div class="for-users">
@@ -181,7 +182,7 @@
         </div>
 
         <div class="card">
-            <img src="images/babl-gam.jpg" alt="Бабл-гам" class="card__image" width="168" height="168" />
+            <img src="images/babl-gam.png" alt="Бабл-гам" class="card__image" width="168" height="168" />
             <h3 class="card__title">Бабл-гам</h3>
             <p class="card__desc">Ванильный пломбир со сладкой посыпкой</p>
             <div class="for-users">
@@ -198,8 +199,8 @@
             </div>
         </div>
 
-        <div class="card">
-            <img src="images/banana.jpg" alt="банан" class="card__image" width="168" height="168" />
+        <div class="card ">
+            <img src="images/banana.png" alt="банан" class="card__image" width="168" height="168" />
             <h3 class="card__title">Банан</h3>
             <p class="card__desc">Сливочный пломбир с банановым вкусом</p>
             <div class="for-users">
@@ -208,7 +209,7 @@
         </div>
 
         <div class="card">
-            <img src="images/chocolate.jpg" alt="шоколад" class="card__image" width="168" height="168" />
+            <img src="images/chocolate.png" alt="шоколад" class="card__image" width="168" height="168" />
             <h3 class="card__title">Шоколадка</h3>
             <p class="card__desc">Классический шоколадный пломбир</p>
             <div class="for-users">
@@ -217,7 +218,7 @@
         </div>
 
         <div class="card">
-            <img src="images/strawberry.jpg" alt="клубника" class="card__image" width="168" height="168" />
+            <img src="images/strawberry.png" alt="клубника" class="card__image" width="168" height="168" />
             <h3 class="card__title">Клубничка</h3>
             <p class="card__desc">Сливочный пломбир с клубничным вкусом</p>
             <div class="for-users">
@@ -226,7 +227,7 @@
         </div>
 
         <div class="card">
-            <img src="images/limon.jpg" alt="лимон" class="card__image" width="168" height="168" />
+            <img src="images/limon.png" alt="лимон" class="card__image" width="168" height="168" />
             <h3 class="card__title">Лимон</h3>
             <p class="card__desc">Освежающий лимонный сорбет</p>
             <div class="for-users">
@@ -244,7 +245,7 @@
         </div>
 
         <div class="card">
-            <img src="images/nuts.jpg" alt="орешек" class="card__image" width="168" height="168" />
+            <img src="images/nuts.png" alt="орешек" class="card__image" width="168" height="168" />
             <h3 class="card__title">Орешек</h3>
             <p class="card__desc">Фисташковый пломбир с шоколадным сиропом</p>
             <div class="for-users">
@@ -253,7 +254,7 @@
         </div>
 
         <div class="card">
-            <img src="images/cream.jpg" alt="крем-брюле" class="card__image" width="168" height="168" />
+            <img src="images/cream.png" alt="крем-брюле" class="card__image" width="168" height="168" />
             <h3 class="card__title">Крем-брюле</h3>
             <p class="card__desc">Классическое крем-брюле</p>
             <div class="for-users">
@@ -262,73 +263,76 @@
         </div>
     </section>
 
-    <div class="more-product">
-        <button class="button-link" type="submit">Показать еще</button>
+    <div class="more-product ">
+        <button class="button-link " type="submit ">Показать еще</button>
 
-        <ul class="pagination">
-            <li class="pagination__item">
-                <a class="pagination__link pagination-prev pagination-disabled">
-                    <span class="visually-hidden">Предыдущая страница</span>
+        <ul class="pagination ">
+            <li class="pagination__item ">
+                <a class="pagination__link pagination-prev pagination-disabled ">
+                    <span class="visually-hidden ">Предыдущая страница</span>
                 </a>
             </li>
-            <li class="pagination__tem">
-                <a class="pagination__link pagination-current">1</a>
+            <li class="pagination__tem ">
+                <a class="pagination__link pagination-current ">1</a>
             </li>
-            <li class="pagination__item">
-                <a class="pagination__link" href="#">2</a>
+            <li class="pagination__item ">
+                <a class="pagination__link " href="# ">2</a>
             </li>
-            <li class="pagination__ite">
-                <a class="pagination__link" href="#">3</a>
+            <li class="pagination__ite ">
+                <a class="pagination__link " href="# ">3</a>
             </li>
-            <li class="pagination__item">
-                <a class="pagination__link" href="#">4</a>
+            <li class="pagination__item ">
+                <a class="pagination__link " href="# ">4</a>
             </li>
-            <li class="pagination__item">
-                <a class="pagination__link" href="#">5</a>
+            <li class="pagination__item ">
+                <a class="pagination__link " href="# ">5</a>
             </li>
-            <li class="pagination__item">
-                <a class="pagination__link pagination-next" href="#">
-                    <span class="visually-hidden">Следующая страница</span>
+            <li class="pagination__item ">
+                <a class="pagination__link pagination-next " href="# ">
+                    <span class="visually-hidden ">Следующая страница</span>
                 </a>
             </li>
         </ul>
     </div>
-    <footer class="page-footer">
-        <div class="footer-socia">
-            <ul class="footer-social__list">
-                <li class="footer-social__item">
-                    <a class="footer__icons" href="#">
-                        <span class="visually-hidden">Телеграмм</span>
+    <footer class="page-footer ">
+        <div class="footer-socia ">
+            <ul class="footer-social__list ">
+                <li class="footer-social__item ">
+                    <a class="footer__icons " href="# ">
+                        <span class="visually-hidden ">Телеграмм</span>
                     </a>
                 </li>
-                <li class="footer-social__item">
-                    <a class="footer__icons" href="#">
-                        <span class="visually-hidden">вконтаткте</span>
+                <li class="footer-social__item ">
+                    <a class="footer__icons " href="# ">
+                        <span class="visually-hidden ">вконтаткте</span>
                     </a>
                 </li>
-                <li class="footer-social__item">
-                    <a class="footer__icons" href=" ">
-                        <span class="visually-hidden">ютуб</span>
+                <li class="footer-social__item ">
+                    <a class="footer__icons " href=" ">
+                        <span class="visually-hidden ">ютуб</span>
                     </a>
                 </li>
             </ul>
 
-            <div class="footer__info">
-                <ul class="footer__information">
-                    <li class="footer__desc-one"><a href="#">Для поставщиков</a></li>
-                    <li class="footer__desc"><a href="#">О производстве</a></li>
-                    <li class="footer__desc"><a href="#">Наши документы</a></li>
-                    <li class="footer__desc"><a href="#">Экологические стандарты</a></li>
+            <div class="footer__info ">
+                <ul class="footer__information ">
+                    <li class="footer__desc-one "><a href="# ">Для поставщиков</a></li>
+                    <li class="footer__desc "><a href="# ">О производстве</a></li>
+                    <li class="footer__desc "><a href="# ">Наши документы</a></li>
+                    <li class="footer__desc ">
+                        <a href="# ">Экологические стандарты</a>
+                    </li>
                 </ul>
             </div>
 
-            <div class="footer__logo">
-                <a class="logo__footer"><img src="images/icons/logo_footer.svg" alt="htmlacademy" width="93" height="26" /></a>
-                <p class="footer__desc">Сделано в <a>.html academy</a> © 2021</p>
+            <div class="footer__logo ">
+                <a class="logo__footer "><img src="images/icons/logo_footer.svg " alt="htmlacademy " width="93 " height="26 " /></a>
+                <p class="footer__desc ">Сделано в <a>.html academy</a> © 2021</p>
             </div>
         </div>
     </footer>
     </main>
 </body>
+
 
 </html>

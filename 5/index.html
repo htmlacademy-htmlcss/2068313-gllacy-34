@@ -10,9 +10,9 @@
   <base href="https://htmlacademy-htmlcss.github.io/2068313-gllacy-34/5/">
 </head>
 
-<body class="container">
+<body>
     <h1 class="visually-hidden">Мороженное</h1>
-    <header class="page-header">
+    <header class="page-header container">
         <nav class="navigation">
             <ul class="navigation__list">
                 <li class="navigation__item">
@@ -45,7 +45,7 @@
         </nav>
     </header>
 
-    <main class="main-index main-container">
+    <main class="main-index container">
         <h2 class="visually-hidden">Виды мороженного</h2>
         <div class="slider">
             <article class="slide active">
@@ -59,7 +59,7 @@
                 <div class="slide__bg"><img class="slide__img" src="images/ice-cream__strawberry.png" width="306" height="507" alt="мороженное пломбир" /></div>
             </article>
 
-            <article class="slide">
+            <article class="slide display-none">
                 <div class="slide__inner">
                     <h3 class="slide__title">Сливочное мороженое<br> со вкусом банана</h3>
                     <p class="slide__desc">
@@ -70,7 +70,7 @@
                 <div class="slide__bg"><img class="slide__img" src="images/ice-cream__banana.png" width="306" height="507" alt="мороженное пломбир" /></div>
             </article>
 
-            <article class="slide">
+            <article class="slide display-none">
                 <div class="slide__inner">
                     <h3 class="slide__title">Карамельный пломбир<br> с маршмеллоу</h3>
                     <p class="slide__desc">
@@ -131,7 +131,7 @@
                     <p class="stock__desc">
                         При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.
                     </p>
-                    <a href="#" class="stock__buttonbutton-link">Хочу подарок</a>
+                    <a href="#" class="stock__button button-link">Хочу подарок</a>
                 </div>
                 <img src="images/marshmallow-free.png" alt="маршиеллоу" class="stock__img" width="219" height="268" />
             </div>
@@ -259,17 +259,19 @@
 
         <div class="communication">
             <div class="communication__info">
+                <address class="adress">
                 <p class="communication__desc">Адрес главного офиса и офлайн-<br>магазина:</p>
                 <a href="#" class="communication__adress">наб. реки Карповки,<br> 5 лит П, Санкт-Петербург</a>
                 <p class="communication__desc">Для заказов по телефону:</p>
                 <a class="communication__tel" href="tel:+1234567890">+7 (812) 812-12-12</a>
                 <p class="communication__desc">(с 10 до 20 ежедневно)</p>
                 <button class="button">Форма обратной связи</button>
+              </address>
             </div>
         </div>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer container">
         <div class="footer-social">
             <ul class="footer-social__list">
                 <li class="footer-social__item">

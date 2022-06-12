@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="styles/styles.css" />
 </head>
 
-<body class="container">
+<body>
     <h1 class="visually-hidden">Каталог мороженного</h1>
-    <header class="page-header">
+    <header class="page-header container">
         <nav class="navigation">
             <ul class="navigation__list">
                 <li class="navigation__item">
@@ -41,7 +41,7 @@
         </nav>
     </header>
 
-    <main class="main-inner">
+    <main class="main-inner container">
         <header class="inner-header">
             <ul class="breadcrumbs">
                 <li class="breadcrumbs__item">
@@ -66,10 +66,10 @@
                             <li class="catalog-filter__item">
                                 <p class="form__desc">Сортировка:</p>
                                 <div class="product-option">
-                                    <select class="select-control" aria-label="Сортировка" id="sort">
-                                     <option selected value="popular">По популярности</option>
-                                     <option value="">Сливочное</option>
-                                     <option value="">малиновое</option>
+                                    <select class="select-control" aria-label="Сортировка" id="sort" name="sort">
+                                       <option selected value="popular">По популярности</option>
+                                       <option value="Сливочное">Сливочное</option>
+                                       <option value="Малиновое">малиновое</option>
                                     </select>
                                 </div>
                             </li>
@@ -83,18 +83,21 @@
                                 <p class="form__desc">Жирность:</p>
                                 <div class="product-checkbox">
 
-                                    <input id="richness" class="control__input" type="checkbox" name="product-group" value="richness" />0%
                                     <label class="control">
-                                    <input class="control-input" type="checkbox" name="product-group" value="richness"/>до 10%
+                                       <input id="richness" class="control__input" type="checkbox" name="product-group" value="richness" />0%
+                                    </label>
+                                    <label class="control">
+                                       <input class="control-input" type="checkbox" name="product-group" value="richness"/>до 10%
                                     </label>
 
                                     <label class="control">
-                                    <input class="control-input" type="checkbox" name="product-group" value="richness" />до 30%
+                                       <input class="control-input" type="checkbox" name="product-group" value="richness" />до 30%
                                     </label>
 
                                     <label class="control">
-                                    <input class="control-input"  type="checkbox" name="product-group" value="richness" />выше 30%
+                                       <input class="control-input"  type="checkbox" name="product-group" value="richness" />выше 30%
                                     </label>
+
                                 </div>
                             </li>
                         </ul>
@@ -106,7 +109,7 @@
                                 <p class="form__desc">Наполнители:</p>
                                 <div class="product-checkbox">
                                     <label class="control">
-                                    <input class="control__input" type="checkbox" name="product-group" value="chocolate" />шоколадные
+                                      <input class="control__input" type="checkbox" name="product-group" value="chocolate" />шоколадные
                                     </label>
                                     <label class="control">
                                       <input class="control__input" type="checkbox" name="product-group" value="shugar" />сахарные посыпки
@@ -115,10 +118,10 @@
                                       <input class="control__input" type="checkbox" name="product-group" value="fruit"/>фрукты
                                     </label>
                                     <label class="control">
-                                     <input class="control__input" type="checkbox" name="product-group" value="pop" />сиропы
+                                      <input class="control__input" type="checkbox" name="product-group" value="pop" />сиропы
                                     </label>
                                     <label class="control">
-                                    <input class="control__input" type="checkbox" name="product-group" value="jem" />джемы
+                                      <input class="control__input" type="checkbox" name="product-group" value="jem" />джемы
                                     </label>
                                 </div>
                             </li>
@@ -247,7 +250,7 @@
                     <a class="pagination__link pagination-prev pagination-disabled">&lt;
                         <span class="visually-hidden">Предыдущая страница</span></a>
                 </li>
-                <li class="pagination__tem">
+                <li class="pagination__item">
                     <a class="pagination__link pagination-current">1</a>
                 </li>
                 <li class="pagination__item">
@@ -270,7 +273,7 @@
             </ul>
         </div>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer container">
         <div class="footer-social">
             <ul class="footer-social__list">
                 <li class="footer-social__item">

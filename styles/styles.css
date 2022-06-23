@@ -83,7 +83,7 @@ body {
     color: #FCFCFC;
     background: var(--btnRed);
     border: 4px solid rgba(255, 47, 100, 0.3);
-    box-shadow: 0px 4px 12px rgba(45, 52, 64, 0.1);
+    box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
     border-radius: 26px;
     background-clip: padding-box;
     cursor: pointer;
@@ -307,7 +307,7 @@ body {
     height: 12px;
     border-radius: 50%;
     background: #FCFCFC;
-    border: 0px;
+    border: 0;
     opacity: 0.3;
     margin-right: 8px;
 }
@@ -450,7 +450,7 @@ body {
     display: block;
     margin: 0 auto;
     margin-top: -30%;
-    filter: drop-shadow(0px 4px 12px rgba(45, 52, 64, 0.1));
+    filter: drop-shadow(0 4px 12px rgba(45, 52, 64, 0.1));
 }
 
 .card__link {
@@ -711,7 +711,7 @@ input[type="email"] {
 
 .delivery__form {
     background: #FCFCFC;
-    box-shadow: 0px 15px 40px rgba(45, 52, 64, 0.12);
+    box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
     border-radius: 8px;
     padding: 40px;
     margin: 64px;
@@ -827,7 +827,7 @@ input[type="text"] {
 
 .communication__info {
     background: #FCFCFC;
-    box-shadow: 0px 8px 16px rgba(45, 52, 64, 0.12);
+    box-shadow: 0 8px 16px rgba(45, 52, 64, 0.12);
     border-radius: 8px;
     max-width: 343px;
     padding: 40px;

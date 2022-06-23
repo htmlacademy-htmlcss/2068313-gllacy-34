@@ -326,10 +326,9 @@ body {
     margin-left: 16px;
 }
 
-.social__icons-telegramm::before {
+.social__icons::before {
     content: '';
     display: inline-block;
-    background-image: url("../images/icons/telegram.svg");
     background-repeat: no-repeat;
     border: 2px solid rgba(252, 252, 252, 0.3);
     border-radius: 50%;
@@ -337,26 +336,16 @@ body {
     min-height: 28px;
 }
 
-.social__icons-vk::before {
-    content: '';
-    display: inline-block;
-    background-image: url("../images/icons/vk.svg");
-    background-repeat: no-repeat;
-    border: 2px solid rgba(252, 252, 252, 0.3);
-    border-radius: 50%;
-    min-width: 28px;
-    min-height: 28px;
-}
-
-.social__icons-youtube::before {
-    content: '';
-    display: inline-block;
+.social__icons--youtube::before {
     background-image: url("../images/icons/youtube.svg");
-    background-repeat: no-repeat;
-    border: 2px solid rgba(252, 252, 252, 0.3);
-    border-radius: 50%;
-    min-width: 28px;
-    min-height: 28px;
+}
+
+.social__icons--vk::before {
+    background-image: url("../images/icons/vk.svg");
+}
+
+.social__icons--telegramm::before {
+    background-image: url("../images/icons/telegram.svg");
 }
 
 
@@ -702,7 +691,7 @@ input[type="email"] {
 .delivery__info {
     padding-left: 100px;
     padding-top: 167px;
-    padding-right: 150px;
+    padding-right: 120x;
     padding-bottom: 15px;
 }
 
@@ -710,14 +699,21 @@ input[type="email"] {
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
-    margin-top: 24px;
+    margin-right: 24px;
     color: #565C66;
+}
+
+.appointment-form {
+    display: grid;
+    column-gap: 16px;
+    grid-template-columns: 117px 287px;
 }
 
 .delivery__form {
     background: #FCFCFC;
     box-shadow: 0px 15px 40px rgba(45, 52, 64, 0.12);
     border-radius: 8px;
+    padding: 40px;
     margin: 64px;
     height: 406px;
     width: 500px;
@@ -729,8 +725,8 @@ input[type="email"] {
     line-height: 22px;
     color: #565C66;
     padding-bottom: 32px;
-    margin-left: 46px;
-    margin-top: 24px;
+    margin: 0;
+    margin-right: 40px;
 }
 
 .form-label__date::after {
@@ -762,7 +758,6 @@ input[type="email"] {
     display: flex;
     flex-direction: column;
     width: 117px;
-    margin-left: 46px;
 }
 
 .appointment-form__phone {
@@ -779,8 +774,8 @@ input[type="email"] {
     line-height: 20px;
     display: flex;
     flex-direction: column;
-    margin-left: 57px;
-    margin-right: 23px;
+    margin-bottom: 32px;
+    grid-column: 1/-1;
 }
 
 .date-tel {
@@ -808,7 +803,6 @@ input[type="text"] {
     line-height: 20px;
     color: #B9B9B9;
     padding: 14px;
-    margin-right: 16px;
     border: 1px solid #B9B9B9;
     border-radius: 4px;
     background: #FFFFFF;
@@ -816,8 +810,8 @@ input[type="text"] {
 }
 
 .delivery__button {
-    margin-top: 41px;
-    margin-left: 181px;
+    grid-column: 1/-1;
+    justify-self: center;
 }
 
 

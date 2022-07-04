@@ -186,7 +186,6 @@ body {
 .popover {
     margin-top: 20px;
     position: absolute;
-    top: 100;
     right: 0;
     z-index: 1;
     box-sizing: border-box;
@@ -259,10 +258,14 @@ body {
 }
 
 .cart-button-delete {
-    cursor: pointer;
-    font-size: 14px;
-    border: none;
     background: none;
+    border: none;
+    cursor: pointer;
+    background-image: url("../images/icons/close.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 16px;
+    width: 16px;
 }
 
 .user-popover {
@@ -271,6 +274,64 @@ body {
     justify-content: space-between;
     border-top: 1px solid #E7E7E7;
     padding-top: 32px;
+}
+
+.cart-information {
+    position: absolute;
+    top: 90px;
+    right: 5px;
+    background: #FCFCFC;
+    padding: 48px 32px;
+    width: 288px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
+    border-radius: 4px;
+    display: none;
+}
+
+.cart-information .popover-title {
+    margin-bottom: 0;
+}
+
+
+/* AUTORIZATION */
+
+.authorization {
+    position: absolute;
+    z-index: 10;
+    top: 90px;
+    right: 110px;
+    background: #FCFCFC;
+    border-radius: 4px;
+    padding: 48px;
+    width: 420px;
+    display: none;
+}
+
+.authorization__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: var(--bodyText);
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+
+.for-users {
+    margin-top: 20px;
+    display: flex !important;
+    justify-content: flex-start !important;
+}
+
+.users-link {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-left: 23px;
+}
+
+.users-link a {
+    border-bottom: 1px solid #2D3440;
 }
 
 
@@ -996,28 +1057,6 @@ body {
     margin-right: 40px;
 }
 
-.form-label__date::after {
-    content: '';
-    background-image: url("../images/icons/help.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    display: inline-block;
-    min-width: 13px;
-    min-height: 13px;
-    margin-left: 5px;
-}
-
-.form-label__adress::after {
-    content: '';
-    background-image: url("../images/icons/help.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    display: inline-block;
-    min-width: 13px;
-    min-height: 13px;
-    margin-left: 5px;
-}
-
 .appointment-form__date {
     font-weight: 700;
     font-size: 16px;
@@ -1025,6 +1064,61 @@ body {
     display: flex;
     flex-direction: column;
     width: 117px;
+}
+
+.tooltip {
+    position: relative;
+    margin-top: 4px;
+}
+
+.tooltip-toggle {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: none;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: -2px;
+}
+
+.tooltip-text {
+    margin-left: 10px;
+    position: absolute;
+    top: -22px;
+    left: 20px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #565C66;
+    padding: 10px 15px;
+    width: 146px;
+    background: #FCFCFC;
+    box-shadow: 0 2px 12px rgba(173, 152, 143, 0.18);
+    border-radius: 1px;
+    border: 2px solid #565C66;
+    display: none;
+}
+
+.tooltip-text:before {
+    content: '';
+    background-image: url("../images/icons/select.svg");
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    transform: rotate(90deg);
+    top: 20px;
+    left: -9px;
+}
+
+.tooltip-toggle:hover+.tooltip-text,
+.tooltip-toggle:focus+.tooltip-text {
+    display: block;
+}
+
+.form-label-icon {
+    position: relative;
+    padding-right: 16px;
 }
 
 .appointment-form__phone {
@@ -1065,6 +1159,18 @@ input[type="tel"] {
 }
 
 input[type="text"] {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--bodyText);
+    padding: 14px;
+    border: 1px solid #B9B9B9;
+    border-radius: 4px;
+    background: #FFFFFF;
+    margin-top: 8px;
+}
+
+input[type="password"] {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
@@ -1680,4 +1786,101 @@ fieldset {
     background: rgba(252, 252, 252, 0.3);
     opacity: 0.4;
     border: 2px solid #FCFCFC;
+}
+
+
+/* modal-window */
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal {
+    position: relative;
+    margin: auto;
+    padding: 64px;
+    background: #FCFCFC;
+    box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
+    border-radius: 8px;
+}
+
+.modal-auth {
+    width: 570px;
+}
+
+.modal-close-button {
+    position: absolute;
+    padding: 0;
+    top: 32px;
+    right: 37px;
+    border: none;
+    cursor: pointer;
+    background: none;
+    background-image: url("../images/icons/close.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 20px;
+    width: 20px;
+}
+
+.modal-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: var(--bodyText);
+    margin-bottom: 32px;
+}
+
+.auth-form .field-group {
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.auth-form-user-options {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+}
+
+.auth-form-user-options .control-label {
+    font-weight: 400;
+}
+
+.auth-form .field {
+    width: 100%;
+}
+
+.auth-form-recovery {
+    line-height: 22px;
+    color: #000000;
+}
+
+.auth-form-button {
+    margin-top: 16px;
+    float: right;
+}
+
+.auth-form .button+.button {
+    margin: 0;
+}
+
+.auth-form-register {
+    width: 360px;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+textarea {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.modal-container-close {
+    display: none;
 }

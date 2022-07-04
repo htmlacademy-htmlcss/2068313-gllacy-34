@@ -73,6 +73,7 @@
                             <li class="catalog-filter__item">
                                 <p class="form__desc">Сортировка:</p>
                                 <div class="product-option">
+
                                     <select class="select-control" aria-label="Сортировка" id="sort" name="sort">
                                        <option selected value="popular">По популярности</option>
                                        <option value="Сливочное">Сливочное</option>
@@ -80,30 +81,49 @@
                                     </select>
                                 </div>
                             </li>
-                            <li class="catalog-filter__item">
-                                <p class="form__desc">Цена: 100 ₽ – 500 ₽</p>
-                                <div class="product-checkbox">
-                                    <input id="price" type="range" min="0" max="100" step="1" />
+                            <li class="catalog-filter__item ">
+                                <div class="range-wrapper-inputs">
+                                    <p class="form__desc desc__range">Цена:</p>
+                                    <label class="catalog-filter-label">
+                            <input class="range-input" type="number" value="100" name="min-price"> ₽
+                          </label>
+                                    <label class="catalog-filter-label">-
+                            <input class="range-input" type="number" value="500" name="max-price" style="width: 37px"> ₽
+                          </label>
+                                </div>
+                                <div class="range range-checkbox">
+                                    <div class="range-scale">
+                                        <div class="range-bar" style="left: 10px; width: 136px">
+                                            <button class="range-toggle toggle-min">
+                                              <div class="range-bg-button"></div>
+                                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                                    </button>
+                                            <button class="range-toggle toggle-max">
+                                              <div class="range-bg-button"></div>
+                                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                                    </button>
+                                        </div>
+                                    </div>
+
+
                                 </div>
                             </li>
                             <li class="catalog-filter__item ">
                                 <p class="form__desc">Жирность:</p>
                                 <div class="product-checkbox">
 
-                                    <label class="control">
-                                       <input id="richness" class="control__input" type="checkbox" name="product-group" value="richness" />0%
-                                    </label>
-                                    <label class="control">
-                                       <input class="control-input" type="checkbox" name="product-group" value="richness"/>до 10%
-                                    </label>
+                                    <span class="control-mark"></span>
+                                    <input id="richness-0" class="control-input" type="radio" name="product-group" value="richness" />
+                                    <label for="richness-0" class="control control-radio">0%</label>
 
-                                    <label class="control">
-                                       <input class="control-input" type="checkbox" name="product-group" value="richness" />до 30%
-                                    </label>
+                                    <input id="richness-10" class="control-input" type="radio" name="product-group" value="richness" />
+                                    <label for="richness-10" class="control control-radio">до 10%</label>
 
-                                    <label class="control">
-                                       <input class="control-input"  type="checkbox" name="product-group" value="richness" />выше 30%
-                                    </label>
+                                    <input id="richness-30" class="control-input" type="radio" name="product-group" value="richness" />
+                                    <label for="richness-30" class="control control-radio">до 30%</label>
+
+                                    <input id="richness-30+" class="control-input" type="radio" name="product-group" value="richness" />
+                                    <label for="richness-30+" class="control control-radio">выше 30%</label>
 
                                 </div>
                             </li>
@@ -115,21 +135,21 @@
                             <li class="catalog-filter__item">
                                 <p class="form__desc">Наполнители:</p>
                                 <div class="product-checkbox">
-                                    <label class="control">
-                                      <input class="control__input" type="checkbox" name="product-group" value="chocolate" />шоколадные
-                                    </label>
-                                    <label class="control">
-                                      <input class="control__input" type="checkbox" name="product-group" value="shugar" />сахарные посыпки
-                                    </label>
-                                    <label class="control">
-                                      <input class="control__input" type="checkbox" name="product-group" value="fruit"/>фрукты
-                                    </label>
-                                    <label class="control">
-                                      <input class="control__input" type="checkbox" name="product-group" value="pop" />сиропы
-                                    </label>
-                                    <label class="control">
-                                      <input class="control__input" type="checkbox" name="product-group" value="jem" />джемы
-                                    </label>
+
+                                    <input id="checkbox-chocolate" class="control__input " type="checkbox" name="product-group" value="chocolate" />
+                                    <label for="checkbox-chocolate" class="control">шоколадные</label>
+
+                                    <input id="checkbox-shugar" class="control__input" type="checkbox" name="product-group" value="shugar" />
+                                    <label for="checkbox-shugar" class="control">сахарные посыпки</label>
+
+                                    <input id="checkbox-fruit" class="control__input" type="checkbox" name="product-group" value="fruit" />
+                                    <label for="checkbox-fruit" class="control">фрукты</label>
+
+                                    <input id="checkbox-sirop" class="control__input" type="checkbox" name="product-group" value="pop" />
+                                    <label for="checkbox-sirop" class="control">сиропы</label>
+
+                                    <input id="checkbox-jam" class="control__input control-checkbox" type="checkbox" name="product-group" value="jem" />
+                                    <label for="checkbox-jam" class="control">джемы</label>
                                 </div>
                             </li>
                         </ul>

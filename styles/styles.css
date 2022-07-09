@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: > 2% and last 1 version
+*/
+
 *,
 *::after,
 *::before {
@@ -66,7 +73,8 @@ body {
     border: 0;
     padding: 0;
     white-space: nowrap;
-    clip-path: inset(100%);
+    -webkit-clip-path: inset(100%);
+            clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
@@ -596,6 +604,7 @@ display: inline-block;
     padding-bottom: 48px;
     padding-right: 56px;
     max-width: 414px;
+    word-wrap: break-word;
 }
 
 .slide__bg {
@@ -801,6 +810,7 @@ display: inline-block;
 }
 
 .stock__item {
+  width: 328px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -827,6 +837,7 @@ display: inline-block;
     font-size: 16px;
     line-height: 22px;
     margin-bottom: 28px;
+    word-wrap: break-word;
 }
 
 
@@ -895,6 +906,7 @@ display: inline-block;
     font-size: 16px;
     line-height: 22px;
     color: #565C66;
+    word-wrap: break-word;
 }
 
 .for-users {
@@ -1005,6 +1017,7 @@ display: inline-block;
 .info__item {
     display: flex;
     align-items: flex-start;
+
 }
 
 .info__icons-icecream {
@@ -1052,11 +1065,13 @@ display: inline-block;
 }
 
 .info__desc {
+  max-width: 440px;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
     color: #565C66;
     margin: 0;
+    word-wrap: break-word;
 }
 
 
@@ -1111,9 +1126,14 @@ display: inline-block;
     line-height: 22px;
     color: #565C66;
     padding-bottom: 44px;
+    word-wrap: break-word;
+}
+.distribution__form{
+  display: flex;
+
 }
 .distribution__form button{
-margin-left: 100px;
+margin-left: 85px;
 }
 
 
@@ -1135,10 +1155,11 @@ margin-left: 100px;
 }
 
 .delivery__info {
-    padding-left: 100px;
-    padding-top: 167px;
-    padding-right: 120x;
-    padding-bottom: 15px;
+  width: 371px;
+    margin-left: 100px;
+    margin-top: 167px;
+    margin-right: 120x;
+    margin-bottom: 15px;
 }
 
 .delivery__desc {
@@ -1147,6 +1168,7 @@ margin-left: 100px;
     line-height: 22px;
     margin-right: 24px;
     color: #565C66;
+    word-wrap: break-word;
 }
 
 .appointment-form {
@@ -1173,6 +1195,7 @@ margin-left: 100px;
     padding-bottom: 32px;
     margin: 0;
     margin-right: 40px;
+    word-wrap: break-word;
 }
 
 .appointment-form__date {
@@ -1405,6 +1428,7 @@ input[type="email"] {
     color: #565C66;
     margin-top: 0;
     padding-bottom: 12px;
+    word-wrap: break-word;
 }
 
 .communication__adress {
@@ -1592,6 +1616,7 @@ input[type="email"] {
 }
 
 .range-bg-button {
+  display: block;
     background: #FCFCFC;
     height: 4px;
     width: 4px;
@@ -1650,12 +1675,14 @@ input[type="email"] {
     text-align: center;
     background-color: transparent;
     border: none;
-    appearance: textfield;
+    -webkit-appearance: textfield;
+            appearance: textfield;
 }
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
-    appearance: none;
+    -webkit-appearance: none;
+            appearance: none;
     margin: 0;
 }
 
@@ -1708,7 +1735,8 @@ fieldset {
 }
 
 .select-control {
-    appearance: none;
+    -webkit-appearance: none;
+            appearance: none;
     border-radius: 20px;
     padding: 8px 16px;
     padding-right: 50px;
@@ -1748,7 +1776,8 @@ fieldset {
 .control__input+label {
     display: inline-flex;
     align-items: center;
-    user-select: none;
+    -webkit-user-select: none;
+            user-select: none;
     cursor: pointer;
 }
 
@@ -1795,7 +1824,8 @@ fieldset {
 .control-input+label {
     display: inline-flex;
     align-items: center;
-    user-select: none;
+    -webkit-user-select: none;
+            user-select: none;
     cursor: pointer;
 }
 

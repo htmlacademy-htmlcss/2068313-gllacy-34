@@ -73,12 +73,12 @@
                           <p class="field-group">
                               <label class="visually-hidden" for="auth-login">Логин</label>
                               <input class="auth-form-field field" type="text" id="auth-login" name="auth-login"
-                                  placeholder="email@example.com">
+                                  placeholder="email@example.com" required>
                           </p>
                           <p class="field-group">
                               <label class="visually-hidden" for="auth-password">Пароль</label>
                               <input class="auth-form-field field" type="password" id="auth-password"
-                                  name="auth-password" placeholder="********">
+                                  name="auth-password" placeholder="********" required>
                           </p>
                       </form>
                       <div class="autorization-users">
@@ -197,12 +197,12 @@
                                 <div class="range range-checkbox">
                                     <div class="range-scale">
                                         <div class="range-bar" style="left: 10px; width: 136px">
-                                            <button class="range-toggle toggle-min">
-                                              <div class="range-bg-button"></div>
+                                          <button class="range-toggle toggle-min">
+                                              <span class="range-bg-button"></span>
                                       <span class="visually-hidden">Изменить минимальную цену.</span>
                                     </button>
                                             <button class="range-toggle toggle-max">
-                                              <div class="range-bg-button"></div>
+                                              <span class="range-bg-button"></span>
                                       <span class="visually-hidden">Изменить максимальную цену.</span>
                                     </button>
                                         </div>

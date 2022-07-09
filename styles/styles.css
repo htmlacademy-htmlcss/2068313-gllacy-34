@@ -1,3 +1,9 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
 @font-face {
     font-family: "inter";
     font-weight: 400;
@@ -34,11 +40,6 @@
     --btnRed: #FF2F64;
 }
 
-*,
-*::after,
-*::before {
-    box-sizing: border-box;
-}
 
 a {
     color: var(--bodyText);
@@ -318,10 +319,10 @@ body {
     margin-bottom: 32px;
 }
 
-.for-users {
+.autorization-users {
     margin-top: 20px;
-    display: flex !important;
-    justify-content: flex-start !important;
+    display: flex ;
+    justify-content: flex-start ;
 }
 
 .users-link {
@@ -504,7 +505,7 @@ display: inline-block;
 }
 
 .link-current {
-    background: #FF4A78 !important;
+    background: #FF4A78 ;
     color: #FCFCFC;
 }
 
@@ -898,7 +899,7 @@ display: inline-block;
 
 .for-users {
     display: flex;
-    justify-content: space-between !important;
+    justify-content: space-between ;
     align-items: center;
 }
 
@@ -1111,6 +1112,9 @@ display: inline-block;
     color: #565C66;
     padding-bottom: 44px;
 }
+.distribution__form button{
+margin-left: 100px;
+}
 
 
 /* DELIVERY */
@@ -1321,26 +1325,23 @@ input[type="email"] {
 /* Hover, Focus */
 
 .field:hover {
-    border: 1px solid #2D3440;
+  box-shadow:0 0 0 1px #2D3440;
 }
 
 .field:focus {
-    border: 2px solid #2D3440;
-    padding: 13px 15px;
+  box-shadow:0 0 0 2px #2D3440;
 }
 
 
 /* Disabled */
 
 .field:disabled:hover {
-    background: #E7E7E7;
-    color: var(--bodyText);
-    border: 1px solid #B9B9B9;
+   opacity: 1;
 }
 
 .field:disabled {
     background: #E7E7E7;
-    border: 1px solid #B9B9B9;
+    box-shadow:0 0 0 1px #B9B9B9;
     opacity: 0.65;
 }
 
@@ -1348,12 +1349,11 @@ input[type="email"] {
 /* Invalid */
 
 .field:invalid {
-    border: 1px solid #EA5454;
+    box-shadow:0 0 0 1px #EA5454;
 }
 
 .field:hover:invalid {
-    border: 2px solid #EA5454;
-    padding: 13px 15px;
+    box-shadow:0 0 0 2px #EA5454;
 }
 
 
@@ -1635,7 +1635,7 @@ input[type="email"] {
 }
 
 .desc__range {
-    padding-right: 0 !important;
+    padding-right: 0 ;
 }
 
 .catalog-filter-label {
@@ -1687,7 +1687,7 @@ fieldset {
 }
 
 .form__desc {
-    margin: 0 !important;
+    margin: 0 ;
     padding: 8px 16px;
     font-weight: 400;
     font-size: 14px;

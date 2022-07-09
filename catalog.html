@@ -2,23 +2,25 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>catalog</title>
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="shortcut icon" type="image/png" sizes="32x32" href="images/icons/favicon.png"/>
+    <link rel="stylesheet" href="styles/styles.css"/>
 </head>
 
 <body>
     <h1 class="visually-hidden">Каталог мороженного</h1>
     <header class="page-header container">
         <nav class="navigation">
+
             <ul class="navigation__list">
                 <li class="navigation__item">
                     <a href="index.html" class="logo"><img class="logo__img" src="images/icons/logo.svg" alt="логотип компании" width="137" height="56" /></a>
                 </li>
-                <li class="navigation__item ">
-                    <a class="navigation__link nav-catalog" href="#">Каталог</a>
+                <li class="navigation__item">
+                    <a class="navigation__link nav-catalog link-current" href="#">Каталог</a>
                     <ul class="nav-item">
                         <li>
                             <p class="catalog-new">Новинки</p>
@@ -44,13 +46,14 @@
                     <a class="navigation__link" href="#">О компании</a>
                 </li>
             </ul>
+
             <ul class="navigation__list">
                 <li class="navigation__item">
                     <a class="navigation__link tel" href="tel:+78005558628">+7 800 555-86-28</a>
                 </li>
-                <li class="navigation__item ">
-                  <a class="navigation__link icons icons__search " href="# ">
-                      <span class="visually-hidden ">Поиск</span>
+                <li class="navigation__item">
+                  <a class="navigation__link icons icons__search" href="#">
+                      <span class="visually-hidden">Поиск</span>
                   </a>
                   <div class="search-modal search-active">
                       <form action="#" method="get">
@@ -63,7 +66,7 @@
                   </div>
               </li>
                 <li class="navigation__item ">
-                  <a class="navigation__link icons icons__enter " href="# ">Вход</a>
+                  <a class="navigation__link icons icons__enter" href="#">Вход</a>
                   <div class="authorization authorization-active">
                       <h2 class="authorization__title">Личный кабинет</h2>
                       <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -78,7 +81,7 @@
                                   name="auth-password" placeholder="********">
                           </p>
                       </form>
-                      <div class="for-users">
+                      <div class="autorization-users">
                           <button class="button">Войти</button>
                           <ul class="users-link">
                               <li>
@@ -143,6 +146,7 @@
                   </div>
               </li>
             </ul>
+
         </nav>
     </header>
 
@@ -170,14 +174,15 @@
                         <ul class="catalog-filter__list">
                             <li class="catalog-filter__item">
                                 <p class="form__desc">Сортировка:</p>
-                                <div class="product-option">
 
+                                <div class="product-option">
                                     <select class="select-control" aria-label="Сортировка" id="sort" name="sort">
                                        <option selected value="popular">По популярности</option>
                                        <option value="Сливочное">Сливочное</option>
                                        <option value="Малиновое">малиновое</option>
                                     </select>
                                 </div>
+
                             </li>
                             <li class="catalog-filter__item ">
                                 <div class="range-wrapper-inputs">
@@ -278,6 +283,7 @@
                     <a href="#" class="card__icon"></a>
                 </div>
             </div>
+
             <div class="card">
                 <a href="#" class="card__link"><img src="images/blueberry.png" alt="Черника" class="card__image" width="168" height="168" /></a>
                 <h3 class="card__title">Черника</h3>

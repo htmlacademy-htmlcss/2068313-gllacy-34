@@ -44,14 +44,15 @@
                         <a class="navigation__link" href="# ">Доставка и оплата</a>
                     </li>
                     <li class="navigation__item ">
-                        <a class="navigation__link " href="# ">О компании</a>
+                        <a class="navigation__link about" href="# ">О компании</a>
                     </li>
                 </ul>
+
                 <ul class="navigation__list ">
-                    <li class="navigation__item ">
+                    <li class="navigation__item">
                         <a class="navigation__link tel " href="tel:+78005558628 ">+7 800 555-86-28</a>
                     </li>
-                    <li class="navigation__item ">
+                    <li class="navigation__item">
                         <a class="navigation__link icons icons__search " href="# ">
                             <span class="visually-hidden ">Поиск</span>
                         </a>
@@ -65,14 +66,14 @@
                             </form>
                         </div>
                     </li>
-                    <li class="navigation__item ">
-                        <a class="navigation__link icons icons__enter " href="# ">Вход</a>
+                    <li class="navigation__item">
+                        <a class="navigation__link icons icons__enter" href="#">Вход</a>
                         <div class="authorization authorization-active">
                             <h2 class="authorization__title">Личный кабинет</h2>
                             <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
                                 <p class="field-group">
                                     <label class="visually-hidden" for="auth-login">Логин</label>
-                                    <input class="auth-form-field field" type="text" id="auth-login" name="auth-login"
+                                    <input class="auth-form-field field" type="email" id="auth-login" name="auth-login"
                                         placeholder="email@example.com" required>
                                 </p>
                                 <p class="field-group">
@@ -80,70 +81,74 @@
                                     <input class="auth-form-field field" type="password" id="auth-password"
                                         name="auth-password" placeholder="********" required>
                                 </p>
+
+                                <div class="autorization-users">
+                                  <button type="submit" class="button">Войти</button>
+                                  <ul class="users-link">
+                                      <li>
+                                          <a>Забыли пароль?</a>
+                                      </li>
+                                      <li>
+                                          <a>Регистрация</a>
+                                      </li>
+                                  </ul>
+                              </div>
+
                             </form>
-                            <div class="autorization-users">
-                                <button class="button">Войти</button>
-                                <ul class="users-link">
-                                    <li>
-                                        <a>Забыли пароль?</a>
-                                    </li>
-                                    <li>
-                                        <a>Регистрация</a>
-                                    </li>
-                                </ul>
-                            </div>
                         </div>
                     </li>
-                    <li class="navigation__item ">
-                        <a class="navigation__link icons icons__cart " href="# ">пусто
+                    <li class="navigation__item">
+                        <a class="navigation__link icons icons__cart" href="#">2 товара
                             <span class="visually-hidden ">Корзина</span>
                         </a>
 
                         <div class="popover popover-cart popover-active">
-                            <button class="popover-close-button ">
-                                <span class="visually-hidden ">Закрыть</span>
+                            <button class="popover-close-button">
+                                <span class="visually-hidden">Закрыть</span>
                             </button>
-                            <div class="popover-content ">
-                                <h2 class="popover-title ">Корзина</h2>
-                                <div class="cart__content ">
-                                    <img src="images/strawberry.png " alt="малинка " class="cart__img " width="46"
+                            <div class="popover-content">
+                                <h2 class="popover-titl">Корзина</h2>
+                                <div class="cart__content">
+                                    <img src="images/strawberry.png" alt="малинка" class="cart__img" width="46"
                                         height="46">
-                                    <ul class="cart__item ">
+                                    <ul class="cart__item">
                                         <li>
-                                            <a class="cart__title ">Малинка</a>
+                                            <a href="#" class="cart__title">Малинка</a>
                                         </li>
                                         <li>
                                             <p class="cart__desc ">1 кг х 310 ₽</p>
                                         </li>
                                     </ul>
-                                    <p class="cart__title ">310 ₽</p>
-                                    <button type="button" class="cart-button-delete ">
-                                        <span class="visually-hidden ">Удалить из корзины</span></button>
+                                    <p class="cart__title">310 ₽</p>
+                                    <button type="button" class="cart-button-delete">
+                                        <span class="visually-hidden">Удалить из корзины</span></button>
                                 </div>
-                                <div class="cart__content ">
-                                    <img src="images/babl-gam.png " alt="малинка " class="cart__img " width="46"
+                                <div class="cart__content">
+                                    <img src="images/babl-gam.png" alt="малинка" class="cart__img" width="46"
                                         height="46">
-                                    <ul class="cart__item ">
+                                    <ul class="cart__item">
                                         <li>
-                                            <a class="cart__title ">Бабл-гам</a>
+                                            <a href="#" class="cart__title">Бабл-гам</a>
                                         </li>
                                         <li>
-                                            <p class="cart__desc ">1,5 кг х 320 ₽</p>
+                                            <p class="cart__desc">1,5 кг х 320 ₽</p>
                                         </li>
                                     </ul>
-                                    <p class="cart__title ">480 ₽</p>
-                                    <button type="button" class="cart-button-delete ">
+                                    <p class="cart__title">480 ₽</p>
+                                    <button type="button" class="cart-button-delete">
                                         <span class="visually-hidden ">Удалить из корзины</span></button>
                                 </div>
-                                <div class="user-popover ">
-                                    <button class="button ">Оформить заказ</button>
-                                    <p class="cart__title ">Итого: 790 ₽</p>
+                                <div class="user-popover">
+                                    <button type="button" class="button">Оформить заказ</button>
+                                    <p class="cart__title">Итого: 790 ₽</p>
                                 </div>
-                                <div class="cart-information cart-information-active">
-                            <h2 class="popover-title ">Ваша корзина пока пуста</h2>
-                        </div>
                             </div>
                         </div>
+
+                        <div class="cart-information cart-information-active">
+                          <h2 class="popover-title">Ваша корзина пока пуста</h2>
+                        </div>
+
                     </li>
                 </ul>
             </nav>
@@ -153,12 +158,12 @@
             <h2 class="visually-hidden">Виды мороженного</h2>
             <div class="slider">
                 <article class="slide active">
-                    <div class="slide__inner">
+                    <div class="slide__inner sctive">
                         <h3 class="slide__title">
                             Нежный пломбир<br/> с клубничным джемом
                         </h3>
                         <p class="slide__desc">
-                            Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это
+                            Натуральное мороженое из свежих сливок <br> и молока с вкуснейшим клубничным джемом – это
                             идеальный десерт для всей семьи.
                         </p>
                         <a href="#" class="order button-link">Заказать</a>
@@ -262,7 +267,7 @@
                     <div class="stock__item">
                         <h3 class="stock__subtitle">Маршмеллоу даром!</h3>
                         <p class="stock__desc">
-                            При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.
+                            При покупке 2 кг пломбира добавим<br> в ваш заказ упаковку нежных<br> зефирок совершенно бесплатно.
                         </p>
                         <a href="#" class="stock__button button-link">Хочу подарок</a>
                     </div>
@@ -293,7 +298,7 @@
                     <h3 class="card__title">Фисташка</h3>
                     <p class="card__desc">Фисташковый пломбир с кусочками шоколада</p>
                     <div class="for-users">
-                        <p class="price">310 ₽/кг</p>
+                        <p class="price">340 ₽/кг</p>
                         <a href="#" class="card__icon"></a>
                     </div>
                 </div>
@@ -304,7 +309,7 @@
                     <h3 class="card__title">Черника</h3>
                     <p class="card__desc">Крем-брюле с черничным джемом</p>
                     <div class="for-users">
-                        <p class="price">310 ₽/кг</p>
+                        <p class="price">330 ₽/кг</p>
                         <a href="#" class="card__icon"></a>
                     </div>
                 </div>
@@ -315,7 +320,7 @@
                     <h3 class="card__title">Бабл-гам</h3>
                     <p class="card__desc">Ванильный пломбир со сладкой посыпкой</p>
                     <div class="for-users">
-                        <p class="price">310 ₽/кг</p>
+                        <p class="price">320 ₽/кг</p>
                         <a href="#" class="card__icon"></a>
                     </div>
                 </div>
@@ -336,19 +341,19 @@
                             </p>
                         </div>
                         <div class="info__item">
-                            <div class="info__icons-leaf"></div>
-                            <p class="info__desc">
-                                Для приготовления мороженого используются сливки и молоко высочайшего качества. Все
-                                ингредиенты и добавки произведены из натурального сырья.
-                            </p>
-                        </div>
-                        <div class="info__item">
                             <div class="info__icons-cow"></div>
                             <p class="info__desc">
-                                Закупка ингредиентов производится только у проверенных фермерских хозяйств, с которыми
+                                Закупка ингредиентов производится только<br> у проверенных фермерских хозяйств, с которыми<br>
                                 нас связывает долговременное сотрудничество.
                             </p>
                         </div>
+                        <div class="info__item">
+                          <div class="info__icons-leaf"></div>
+                          <p class="info__desc">
+                              Для приготовления мороженого используются сливки и молоко высочайшего качества. Все
+                              ингредиенты<br> и добавки произведены из натурального сырья.
+                          </p>
+                      </div>
                         <div class="info__item">
                             <div class="info__icons-term"></div>
                             <p class="info__desc">
@@ -369,7 +374,7 @@
                 <div class="distribution">
                     <div class="distribution__bg">
                         <p class="distribution__desc">
-                            Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у
+                            Подпишитесь на нашу сладкую рассылку и будьте всегда <br> в курсе всего самого вкусного, что у
                             нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
                         </p>
 
@@ -391,8 +396,8 @@
                         Доставка любимого<br/> мороженого на дом
                     </h2>
                     <p class="delivery__desc">
-                        Хочется полакомиться любимым дессертом,<br/> но нет времени съездить в магазин? Закажите<br/>
-                        доставку мороженого на дом, и курьер<br/> привезёт вам ваш заказ в течение часа!
+                        Хочется полакомиться любимым десертом,<br/> но нет времени съездить в магазин? Закажите
+                        доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!
                     </p>
                 </div>
 
@@ -447,13 +452,13 @@
                 <div class="communication__info">
                     <address class="adress">
                         <p class="communication__desc">
-                            Адрес главного офиса и офлайн-<br />магазина:
+                            Адрес главного офиса<br> и офлайн-магазина:
                         </p>
                         <a href="#" class="communication__adress">наб. реки Карповки,<br />5 лит П, Санкт-Петербург</a>
                         <p class="communication__desc">Для заказов по телефону:</p>
                         <a class="communication__tel" href="tel:+1234567890 ">+7 (812) 812-12-12</a>
-                        <p class="communication__desc">(с 10 до 20 ежедневно)</p>
-                        <button class="button">Форма обратной связи</button>
+                        <p class="communication__desc2">(с 10 до 20 ежедневно)</p>
+                        <button class="button communication__button">Форма обратной связи</button>
                     </address>
                 </div>
             </div>
@@ -485,7 +490,7 @@
                     <li class="footer__desc-one"><a href="#">Для поставщиков</a></li>
                     <li class="footer__desc"><a href="#">О производстве</a></li>
                 </ul>
-                <ul class="footer__information">
+                <ul class="footer__information ">
                     <li class="footer__desc"><a href="#">Наши документы</a></li>
                     <li class="footer__desc">
                         <a href="#">Экологические стандарты</a>

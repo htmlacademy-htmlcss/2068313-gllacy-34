@@ -13,76 +13,76 @@
 <body>
     <h1 class="visually-hidden">Каталог мороженного</h1>
     <header class="page-header container">
-        <nav class="navigation">
+      <nav class="navigation">
+        <ul class="navigation__list">
+            <li class="navigation__item">
+                <a href="index.html " class="logo "><img class="logo__img " src="images/icons/logo.svg "
+                        alt="логотип компании " width="137" height="56" /></a>
+            </li>
+            <li class="navigation__item ">
+                <a class="navigation__link nav-catalog link-current" href="catalog.html ">Каталог</a>
+                <ul class="nav-item">
+                    <li>
+                        <p class="catalog-new">Новинки</p>
+                    </li>
+                    <li>
+                        <a class="navigation-link">Сливочное</a>
+                    </li>
+                    <li>
+                        <a class="navigation-link">Щербеты</a>
+                    </li>
+                    <li>
+                        <a class="navigation-link">Фруктовый лед</a>
+                    </li>
+                    <li>
+                        <a class="navigation-link">Мелорин</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="navigation__item">
+                <a class="navigation__link" href="# ">Доставка и оплата</a>
+            </li>
+            <li class="navigation__item ">
+                <a class="navigation__link about" href="# ">О компании</a>
+            </li>
+        </ul>
 
-            <ul class="navigation__list">
-                <li class="navigation__item">
-                    <a href="index.html" class="logo"><img class="logo__img" src="images/icons/logo.svg" alt="логотип компании" width="137" height="56" /></a>
-                </li>
-                <li class="navigation__item">
-                    <a class="navigation__link nav-catalog link-current" href="#">Каталог</a>
-                    <ul class="nav-item">
-                        <li>
-                            <p class="catalog-new">Новинки</p>
-                        </li>
-                        <li>
-                            <a class="navigation-link">Сливочное</a>
-                        </li>
-                        <li>
-                            <a class="navigation-link">Щербеты</a>
-                        </li>
-                        <li>
-                            <a class="navigation-link">Фруктовый лед</a>
-                        </li>
-                        <li>
-                            <a class="navigation-link">Мелорин</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="navigation__item">
-                    <a class="navigation__link" href="#">Доставка и оплата</a>
-                </li>
-                <li class="navigation__item">
-                    <a class="navigation__link" href="#">О компании</a>
-                </li>
-            </ul>
+        <ul class="navigation__list ">
+            <li class="navigation__item">
+                <a class="navigation__link tel " href="tel:+78005558628 ">+7 800 555-86-28</a>
+            </li>
+            <li class="navigation__item">
+                <a class="navigation__link icons icons__search " href="# ">
+                    <span class="visually-hidden ">Поиск</span>
+                </a>
+                <div class="search-modal search-active">
+                    <form action="#" method="get">
+                        <label for="search-input">
+                            <input id="search-input" class="search-input" type="text" name="text" value=""
+                                placeholder="поиск по сайту">
+                        </label>
+                        <span class="search-close"><button type="button"></button></span>
+                    </form>
+                </div>
+            </li>
+            <li class="navigation__item">
+                <a class="navigation__link icons icons__enter" href="#">Вход</a>
+                <div class="authorization authorization-active">
+                    <h2 class="authorization__title">Личный кабинет</h2>
+                    <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+                        <p class="field-group">
+                            <label class="visually-hidden" for="auth-login">Логин</label>
+                            <input class="auth-form-field field" type="email" id="auth-login" name="auth-login"
+                                placeholder="email@example.com" required>
+                        </p>
+                        <p class="field-group">
+                            <label class="visually-hidden" for="auth-password">Пароль</label>
+                            <input class="auth-form-field field" type="password" id="auth-password"
+                                name="auth-password" placeholder="********" required>
+                        </p>
 
-            <ul class="navigation__list">
-                <li class="navigation__item">
-                    <a class="navigation__link tel" href="tel:+78005558628">+7 800 555-86-28</a>
-                </li>
-                <li class="navigation__item">
-                  <a class="navigation__link icons icons__search" href="#">
-                      <span class="visually-hidden">Поиск</span>
-                  </a>
-                  <div class="search-modal search-active">
-                      <form action="#" method="get">
-                          <label for="search-input">
-                              <input id="search-input" class="search-input" type="text" name="text" value=""
-                                  placeholder="поиск по сайту">
-                          </label>
-                          <span class="search-close"><button type="button"></button></span>
-                      </form>
-                  </div>
-              </li>
-                <li class="navigation__item ">
-                  <a class="navigation__link icons icons__enter" href="#">Вход</a>
-                  <div class="authorization authorization-active">
-                      <h2 class="authorization__title">Личный кабинет</h2>
-                      <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
-                          <p class="field-group">
-                              <label class="visually-hidden" for="auth-login">Логин</label>
-                              <input class="auth-form-field field" type="text" id="auth-login" name="auth-login"
-                                  placeholder="email@example.com" required>
-                          </p>
-                          <p class="field-group">
-                              <label class="visually-hidden" for="auth-password">Пароль</label>
-                              <input class="auth-form-field field" type="password" id="auth-password"
-                                  name="auth-password" placeholder="********" required>
-                          </p>
-                      </form>
-                      <div class="autorization-users">
-                          <button class="button">Войти</button>
+                        <div class="autorization-users">
+                          <button type="submit" class="button">Войти</button>
                           <ul class="users-link">
                               <li>
                                   <a>Забыли пароль?</a>
@@ -92,62 +92,65 @@
                               </li>
                           </ul>
                       </div>
-                  </div>
-              </li>
-                <li class="navigation__item ">
-                  <a class="navigation__link icons icons__cart " href="# ">пусто
-                      <span class="visually-hidden ">Корзина</span>
-                  </a>
 
-                  <div class="popover popover-cart popover-active">
-                      <button class="popover-close-button ">
-                          <span class="visually-hidden ">Закрыть</span>
-                      </button>
-                      <div class="popover-content ">
-                          <h2 class="popover-title ">Корзина</h2>
-                          <div class="cart__content ">
-                              <img src="images/strawberry.png " alt="малинка " class="cart__img " width="46"
-                                  height="46">
-                              <ul class="cart__item ">
-                                  <li>
-                                      <a class="cart__title ">Малинка</a>
-                                  </li>
-                                  <li>
-                                      <p class="cart__desc ">1 кг х 310 ₽</p>
-                                  </li>
-                              </ul>
-                              <p class="cart__title ">310 ₽</p>
-                              <button type="button" class="cart-button-delete ">
-                                  <span class="visually-hidden ">Удалить из корзины</span></button>
-                          </div>
-                          <div class="cart__content ">
-                              <img src="images/babl-gam.png " alt="малинка " class="cart__img " width="46"
-                                  height="46">
-                              <ul class="cart__item ">
-                                  <li>
-                                      <a class="cart__title ">Бабл-гам</a>
-                                  </li>
-                                  <li>
-                                      <p class="cart__desc ">1,5 кг х 320 ₽</p>
-                                  </li>
-                              </ul>
-                              <p class="cart__title ">480 ₽</p>
-                              <button type="button" class="cart-button-delete ">
-                                  <span class="visually-hidden ">Удалить из корзины</span></button>
-                          </div>
-                          <div class="user-popover ">
-                              <button class="button ">Оформить заказ</button>
-                              <p class="cart__title ">Итого: 790 ₽</p>
-                          </div>
-                          <div class="cart-information cart-information-active">
-                            <h2 class="popover-title ">Ваша корзина пока пуста</h2>
+                    </form>
+                </div>
+            </li>
+            <li class="navigation__item">
+                <a class="navigation__link icons icons__cart" href="#">2 товара
+                    <span class="visually-hidden ">Корзина</span>
+                </a>
+
+                <div class="popover popover-cart popover-active">
+                    <button class="popover-close-button">
+                        <span class="visually-hidden">Закрыть</span>
+                    </button>
+                    <div class="popover-content">
+                        <h2 class="popover-titl">Корзина</h2>
+                        <div class="cart__content">
+                            <img src="images/strawberry.png" alt="малинка" class="cart__img" width="46"
+                                height="46">
+                            <ul class="cart__item">
+                                <li>
+                                    <a href="#" class="cart__title">Малинка</a>
+                                </li>
+                                <li>
+                                    <p class="cart__desc ">1 кг х 310 ₽</p>
+                                </li>
+                            </ul>
+                            <p class="cart__title">310 ₽</p>
+                            <button type="button" class="cart-button-delete">
+                                <span class="visually-hidden">Удалить из корзины</span></button>
                         </div>
-                      </div>
-                  </div>
-              </li>
-            </ul>
+                        <div class="cart__content">
+                            <img src="images/babl-gam.png" alt="малинка" class="cart__img" width="46"
+                                height="46">
+                            <ul class="cart__item">
+                                <li>
+                                    <a href="#" class="cart__title">Бабл-гам</a>
+                                </li>
+                                <li>
+                                    <p class="cart__desc">1,5 кг х 320 ₽</p>
+                                </li>
+                            </ul>
+                            <p class="cart__title">480 ₽</p>
+                            <button type="button" class="cart-button-delete">
+                                <span class="visually-hidden ">Удалить из корзины</span></button>
+                        </div>
+                        <div class="user-popover">
+                            <button type="button" class="button">Оформить заказ</button>
+                            <p class="cart__title">Итого: 790 ₽</p>
+                        </div>
+                    </div>
+                </div>
 
-        </nav>
+                <div class="cart-information cart-information-active">
+                  <h2 class="popover-title">Ваша корзина пока пуста</h2>
+                </div>
+
+            </li>
+        </ul>
+    </nav>
     </header>
 
     <main class="main-inner container">
@@ -160,7 +163,7 @@
                     <p class="breadcrumbs__link">&gt;&gt;</p>
                 </li>
                 <li class="breadcrumbs__item">
-                    <a class="breadcrumbs__link breadcrumbs__link-active" href="catalog.html">Каталог</a>
+                    <a class="breadcrumbs__link breadcrumbs__link-active" href="#">Каталог</a>
                 </li>
             </ul>
             <h1 class="inner-header__title">Сливочное мороженое</h1>
@@ -174,7 +177,6 @@
                         <ul class="catalog-filter__list">
                             <li class="catalog-filter__item">
                                 <p class="form__desc">Сортировка:</p>
-
                                 <div class="product-option">
                                     <select class="select-control" aria-label="Сортировка" id="sort" name="sort">
                                        <option selected value="popular">По популярности</option>
@@ -182,8 +184,8 @@
                                        <option value="Малиновое">малиновое</option>
                                     </select>
                                 </div>
-
                             </li>
+
                             <li class="catalog-filter__item ">
                                 <div class="range-wrapper-inputs">
                                     <p class="form__desc desc__range">Цена:</p>
@@ -211,15 +213,16 @@
 
                                 </div>
                             </li>
+
                             <li class="catalog-filter__item ">
                                 <p class="form__desc">Жирность:</p>
                                 <div class="product-checkbox">
 
                                     <span class="control-mark"></span>
-                                    <input id="richness-0" class="control-input" type="radio" name="product-group" value="richness" />
+                                    <input id="richness-0" class="control-input" type="radio" name="product-group" value="richness"/>
                                     <label for="richness-0" class="control control-radio">0%</label>
 
-                                    <input id="richness-10" class="control-input" type="radio" name="product-group" value="richness" />
+                                    <input id="richness-10" class="control-input" type="radio" name="product-group" value="richness" checked/>
                                     <label for="richness-10" class="control control-radio">до 10%</label>
 
                                     <input id="richness-30" class="control-input" type="radio" name="product-group" value="richness" />
@@ -239,10 +242,10 @@
                                 <p class="form__desc">Наполнители:</p>
                                 <div class="product-checkbox">
 
-                                    <input id="checkbox-chocolate" class="control__input " type="checkbox" name="product-group" value="chocolate" />
+                                    <input id="checkbox-chocolate" class="control__input" type="checkbox" name="product-group" value="chocolate" checked />
                                     <label for="checkbox-chocolate" class="control">шоколадные</label>
 
-                                    <input id="checkbox-shugar" class="control__input" type="checkbox" name="product-group" value="shugar" />
+                                    <input id="checkbox-shugar" class="control__input" type="checkbox" name="product-group" value="shugar" checked/>
                                     <label for="checkbox-shugar" class="control">сахарные посыпки</label>
 
                                     <input id="checkbox-fruit" class="control__input" type="checkbox" name="product-group" value="fruit" />
@@ -265,7 +268,7 @@
         <section class="cards">
             <h2 class="visually-hidden">карточки товаров</h2>
             <div class="card">
-                <a href="#" class="card__link"><img src="images/raspberry.png" alt="малина" class="card__image" width="168" height="168" /></a>
+                <a href="#" class="card__link"><img src="images/raspberry.png" alt="малина" class="card__image" width="168" height="168"/></a>
                 <h3 class="card__title">Малинка</h3>
                 <p class="card__desc">Сливочное мороженое с малиновым джемом</p>
                 <div class="for-users">
@@ -419,6 +422,7 @@
     </main>
 
     <footer class="page-footer container">
+
         <div class="footer-social">
             <ul class="footer-social__list">
                 <li class="social__item">
@@ -438,6 +442,7 @@
                 </li>
             </ul>
         </div>
+
         <div class="footer__info">
             <ul class="footer__information">
                 <li class="footer__desc-one"><a href="#">Для поставщиков</a></li>
@@ -450,8 +455,9 @@
                 </li>
             </ul>
         </div>
+
         <div class="footer__logo">
-            <a class="logo__footer" href="https://htmlacademy.ru/"><img src="images/icons/logo_footer.svg" alt="htmlacademy" width="93" height="26" /></a>
+            <a class="logo__footer" href="https://htmlacademy.ru/"><img src="images/icons/logo_footer.svg" alt="htmlacademy" width="93" height="26"/></a>
             <p class="footer__desc-academy">Сделано в <a href="https://htmlacademy.ru">.html academy</a> © 2021</p>
         </div>
 

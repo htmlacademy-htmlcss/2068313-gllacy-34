@@ -600,6 +600,7 @@ color: var(--bodyText);
 .slide.active {
   display: flex;
   order:-1;
+  margin-right: auto;
 }
 .slide.active > .slide__inner{
   display: block;
@@ -607,7 +608,7 @@ color: var(--bodyText);
 
 .slider {
   display: flex;
-  gap: 50px;
+  gap: 40px;
   position: relative;
 }
 
@@ -617,7 +618,7 @@ color: var(--bodyText);
     flex-direction: column;
     justify-content: center;
     margin-left: 70px;
-    margin-right: 27px;
+    margin-right: 21px;
 }
 .slide__inner.active{
   display: flex;
@@ -688,7 +689,7 @@ height: 310px;
     justify-content: space-between;
     width: 353px;
     position: absolute;
-    top: 251px;
+    top: 255px;
     left: 541px;
 }
 
@@ -727,7 +728,7 @@ height: 310px;
 
 .slider__user {
   margin: 0;
-    margin-bottom: 79px;
+    margin-bottom: 74px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -836,7 +837,7 @@ height: 310px;
 /* STOCK */
 
 .stock {
-    margin-bottom: 84px;
+    margin-bottom: 83px;
     max-height: 268px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -914,7 +915,7 @@ height: 310px;
 .cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 30px;
+    column-gap: 31px;
     row-gap: 30px;
     margin-bottom: 78px;
 }
@@ -924,7 +925,7 @@ height: 310px;
     font-size: 32px;
     line-height: 46px;
     text-align: center;
-    margin-bottom: 47px;
+    margin-bottom: 45px;
 }
 
 .card {
@@ -949,7 +950,7 @@ height: 310px;
 .card__image {
     display: block;
     margin: 0 auto;
-    margin-top: -28%;
+    margin-top: -26%;
     filter: drop-shadow(0 4px 12px rgba(45, 52, 64, 0.1));
 }
 
@@ -959,8 +960,8 @@ height: 310px;
 }
 
 .card__title {
-    margin-top: 14px;
-    margin-bottom: -6px;
+    margin-top: 13px;
+    margin-bottom: -8px;
     text-align: center;
     font-weight: 700;
     font-size: 20px;
@@ -975,9 +976,11 @@ height: 310px;
     line-height: 22px;
     color: #565C66;
     word-wrap: break-word;
+
 }
 
 .for-users {
+  margin-top: 5px;
     display: flex;
     justify-content: space-between ;
     align-items: flex-start;
@@ -989,7 +992,7 @@ height: 310px;
     font-size: 20px;
     line-height: 24px;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 26px;
 }
 
 .card__icon {
@@ -997,7 +1000,7 @@ height: 310px;
     border-radius: 50%;
     width: 32px;
     height: 32px;
-    margin-top: -2px;
+    margin-top: -6px;
 }
 
 .card__icon::before {
@@ -1811,7 +1814,7 @@ fieldset {
     display: flex;
     align-items: flex-end;
     flex-wrap: wrap;
-    margin-bottom: -26px;
+    margin-bottom: -27px;
 }
 
 .catalog-filter__list {

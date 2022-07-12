@@ -57,7 +57,7 @@
               <span class="visually-hidden">Поиск.</span>
             </a>
             <div class="search-modal search-active">
-              <form action="#" method="get">
+              <form class="search-form" action="#" method="get">
                 <label for="search-input">
                   <input id="search-input" class="search-input" type="text" name="text" value=""
                     placeholder="поиск по сайту">
@@ -180,7 +180,7 @@
             </h3>
             <p class="slide__desc">
               Сливочное мороженое с ярким банановым<br />вкусом подарит вам свежесть и
-              наслаждение<br />даже в самый жаркий летний день.
+              наслаждение &nbsp; даже в самый жаркий летний день.
             </p>
             <a href="#" class="order button-link">Заказать</a>
           </div>
@@ -483,13 +483,13 @@
       </div>
       <div class="footer__info">
         <ul class="footer__information">
-          <li class="footer__desc-one"><a href="#">Для поставщиков</a></li>
-          <li class="footer__desc"><a href="#">О производстве</a></li>
+          <li class="footer__desc-one "><a href="#" class="footer__link">Для поставщиков</a></li>
+          <li class="footer__desc"><a href="#" class="footer__link">О производстве</a></li>
         </ul>
         <ul class="footer__information ">
-          <li class="footer__desc"><a href="#">Наши документы</a></li>
+          <li class="footer__desc"><a href="#" class="footer__link">Наши документы</a></li>
           <li class="footer__desc">
-            <a href="#">Экологические стандарты</a>
+            <a href="#" class="footer__link">Экологические стандарты</a>
           </li>
         </ul>
       </div>
@@ -497,7 +497,7 @@
         <a class="logo__footer" href="https://htmlacademy.ru/"><img src="images/icons/logo_footer.svg"
             alt="htmlacademy./" width="93" height="26" /></a>
         <p class="footer__desc-academy">
-          Сделано в <a href="https://htmlacademy.ru">.html academy</a> © 2021
+          Сделано в <a href="https://htmlacademy.ru" class="footer__link">.html academy</a> © 2021
         </p>
       </div>
     </footer>
@@ -522,7 +522,7 @@
             </p>
             <p class="field-group">
               <label class="visually-hidden" for="auth-email">information.</label>
-              <textarea rows="10" cols="47" name="text" placeholder="В свободной форме"></textarea>
+              <textarea class="textarea" rows="10" cols="47" name="text" placeholder="В свободной форме"></textarea>
             </p>
 
             <button class="button auth-form-button" type="submit">Отправить</button>

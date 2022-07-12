@@ -1207,6 +1207,7 @@ body {
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
+    color: var(--bodyText);
 }
 
 .distribution {
@@ -1669,6 +1670,7 @@ input[type="email"] {
     text-decoration: none;
     margin: 0;
     margin-right: 5px;
+    color: var(--bodyText);
 }
 
 .breadcrumbs__link::after {
@@ -1688,6 +1690,7 @@ input[type="email"] {
     margin: 0;
     margin-right: 5px;
     border-bottom: 2px solid #2D3440;
+    color: var(--bodyText);
 }
 
 .breadcrumbs__item {
@@ -2049,6 +2052,7 @@ input[type="email"] {
     height: 25px;
     border-radius: 76px;
     padding: 2px 7px;
+    color: var(--bodyText);
 }
 
 .pagination__link:hover {

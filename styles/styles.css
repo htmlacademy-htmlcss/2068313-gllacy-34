@@ -1847,7 +1847,7 @@ input[type="email"] {
     display: flex;
     align-items: flex-end;
     flex-wrap: wrap;
-    margin-bottom: -26px;
+    margin-bottom: -27px;
 }
 
 .catalog-filter__list {
@@ -1967,7 +1967,7 @@ input[type="email"] {
     opacity: 0.5;
 }
 .control__input:focus+label::before{
-  background-color: #FCFCFC;
+    background-color: #FCFCFC;
 }
 
 /* input-Radio */
@@ -2034,7 +2034,7 @@ input[type="email"] {
 }
 
 .product-checkbox-input {
-  padding: 21px 20px;
+    padding: 21px 20px;
 }
 
 .pagination__item {
@@ -2052,7 +2052,36 @@ input[type="email"] {
     height: 25px;
     border-radius: 76px;
     padding: 2px 7px;
+    margin-right: -1px;
     color: var(--bodyText);
+}
+
+.pagination-prev{
+    padding-right: 1px;
+    padding-left: 0;
+    margin-right: 10px;
+}
+
+.pagination-prev::before{
+    content: "";
+    display: inline-block;
+    background-image: url("../images/icons/select.svg");
+    color: var(--bodyText);
+    width: 15px;
+    height: 15px;
+    transform: rotate(90deg);
+    padding-top: 20px;
+}
+
+.pagination-next::after{
+    content: "";
+    display: inline-block;
+    background-image: url("../images/icons/select.svg");
+    color: var(--bodyText);
+    width: 15px;
+    height: 15px;
+    transform: rotate(-90deg);
+    padding-top: 20px;
 }
 
 .pagination__link:hover {
@@ -2075,6 +2104,7 @@ input[type="email"] {
 
 .pagination-catalog {
     display: flex;
+    margin-top: 18px;
 }
 
 .more-product {

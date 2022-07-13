@@ -1891,8 +1891,8 @@ input[type="email"] {
     -webkit-appearance: none;
             appearance: none;
     border-radius: 20px;
-    padding: 9px 14px;
-    padding-right: 72px;
+    padding: 8px 15px;
+    padding-right: 68px;
     color: #2D3440;
     background-color: rgba(252, 252, 252, 0.3);
     background-image: url("../images/icons/select.svg");
